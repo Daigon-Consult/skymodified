@@ -73,13 +73,17 @@ h2#site-slogan {
 /* Footer */
 .breadcrumb,
 #page > footer,
-#page > footer .block-title {
+#page > footer .block-title, 
+footer,
+footer .block-title {
   background-color: #e3e1df;
   color: #010101;
 }
 .breadcrumb a,
 #page > footer a,
-#page > footer a:visited {
+#page > footer a:visited, 
+footer a,
+footer a:visited {
  color: #126598;
 }
 .breadcrumb a:hover,
@@ -87,7 +91,10 @@ h2#site-slogan {
 .breadcrumb a:active,
 #page > footer a:hover,
 #page > footer a:focus,
-#page > footer a:active {
+#page > footer a:active, 
+footer a:hover,
+footer a:focus,
+footer a:active {
   color: #127ba5;
 }
 

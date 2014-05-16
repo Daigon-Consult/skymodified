@@ -26,7 +26,8 @@ div.messages {
   padding-top: 20px;
 }
 #page > header {
-  clear: both;
+  /*clear: both;*/
+  clear: none;
   padding: 20px 0 0;
 }
 #branding {
@@ -85,6 +86,7 @@ h1#page-title {
 .region-sidebar-second {
   margin-bottom: 20px;
   margin-top: 20px;
+  min-height: 700px;
 }
 .region-content-aside {
   padding-top: 20px;
@@ -240,3 +242,32 @@ div.messages {
 .popout { background-position: 0 -264px; }
 .search { background-position: 0 -330px; }
 .x { background-position: 0 -396px;}
+
+
+/* Footer  Corrections*/
+.breadcrumb,
+#page > footer,
+#page > footer .block-title, 
+footer,
+footer .block-title {
+  background-color: #e3e1df;
+  color: #010101;
+}
+.breadcrumb a,
+#page > footer a,
+#page > footer a:visited, 
+footer a,
+footer a:visited {
+ color: #126598;
+}
+.breadcrumb a:hover,
+.breadcrumb a:focus,
+.breadcrumb a:active,
+#page > footer a:hover,
+#page > footer a:focus,
+#page > footer a:active, 
+footer a:hover,
+footer a:focus,
+footer a:active {
+  color: #127ba5;
+}

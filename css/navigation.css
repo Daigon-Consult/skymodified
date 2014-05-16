@@ -32,6 +32,7 @@ ul.menu ul {
 .region-top-menu {
   height: 2.5em;
   margin-bottom: 10px;
+  float: right;  
 }
 .region-top-menu .block {
   margin: 0;

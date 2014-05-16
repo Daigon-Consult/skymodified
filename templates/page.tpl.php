@@ -37,6 +37,8 @@
     <?php print render($page['menu_bar']); ?>
 
   </header>
+  
+
 
   <div id="columns"<?php print $page['menu_bar'] ? 'class="no-menu-bar"' : '' ;?>>
     <div class="columns-inner clearfix">
@@ -155,8 +157,8 @@
       <?php if ($page['footer']): print render($page['footer']); endif; ?>
     </footer>
   <?php endif; ?>
-
 </div><!-- //End #page, .container -->
+
 
 <?php if ($collapsible = render($page['collapsible'])): ?>
   <section id="section-collapsible" class="section-collapsible clearfix">
