@@ -77,7 +77,7 @@
 
                 <?php if ($title): ?>
                   <h1 id="page-title"<?php print $attributes; ?>>
-                    <?php print $title; ?>
+                    <?php// print $title; ?>
                   </h1>
                 <?php endif; ?>
 

@@ -1,7 +1,9 @@
-<div id="page" class="<?php print $classes; ?>">
+<div id="page" class="container <?php print $classes; ?>">
+
+  <?php print render($page['top_menu']); ?>
 
   <header id="header" class="clearfix" role="banner">
-    <div class="container">
+
     <?php if ($site_logo || $site_name || $site_slogan): ?>
       <!-- start: Branding -->
       <div id="branding" class="branding-elements clearfix">
@@ -32,12 +34,12 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
+    <?php print render($page['menu_bar']); ?>
 
-    </div><!-- /end  limited width container -->
   </header>
-  <div class="container">
-  <?php print render($page['menu_bar']); ?>
-  <?php print render($page['top_menu']); ?>
+  
+
+
   <div id="columns"<?php print $page['menu_bar'] ? 'class="no-menu-bar"' : '' ;?>>
     <div class="columns-inner clearfix">
 
@@ -126,8 +128,6 @@
     </div>
   </div>
 
-  </div><!-- /end  limited width container -->
-  
   <?php if (
     $page['footer'] ||
     $page['four_first'] ||
@@ -136,7 +136,6 @@
     $page['four_fourth']
     ): ?>
     <footer role="contentinfo">
-      <div class="container">
       <?php if (
         $page['four_first'] ||
         $page['four_second'] ||
@@ -156,7 +155,6 @@
         </div>
       <?php endif; ?>
       <?php if ($page['footer']): print render($page['footer']); endif; ?>
-      </div><!-- /end  limited width container -->
     </footer>
   <?php endif; ?>
 </div><!-- //End #page, .container -->
